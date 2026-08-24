@@ -1,2 +1,2 @@
-# practice-projs
+# ws101
 Yes.
