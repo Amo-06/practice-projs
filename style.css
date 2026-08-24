@@ -1,0 +1,207 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e99e9b;
+    background-image: url('https://transparenttextures.com');
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Segoe Print', sans-serif;
+    color: #e26d5c;
+    min-height: 100vh;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;   align-items: center;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.h1 {
+    display: inline-block;
+    background: #ffffff;
+    color: #e26d5c;
+    font-size: 2.5rem;
+    padding: 10px 45px;
+    border-radius: 5px;
+    border: 3px solid #e26d5c;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.profile-pic {
+    width: 260px;
+    height: 240px;
+    object-fit: cover;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 4px solid #ffffff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.socials {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    margin: -5px 0;
+}
+
+.social-icon {
+    color: #ffffff;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.social-logo-img {
+    width: 100%;
+    height: 100%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%) drop-shadow(2px 2px 0px rgba(0,0,0,0.15));
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.artists-section {
+    width: 100%;
+    max-width: 320px;
+}
+
+
+.artists-header {
+    background: #ffffff;
+    color: #e26d5c;
+    text-align: center;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 2px solid #e26d5c;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.05);
+}
+
+
+.artists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+.music {
+    width: 100%;
+    aspect-ratio: 1.2 / 1;
+    object-fit: cover;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 6px rgba(0,0,0,0.05);
+}
+
+.right-column h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+.pInfo {
+    display: inline-block;
+}
+
+.info-block {
+    margin-bottom: 35px;
+}
+
+
+.infobox {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.05);
+}
+
+.infobox p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #e26d5c;
+}
+
+.infobox p:last-child {
+    margin-bottom: 0;
+}
+
+
+.hobbies {
+    display: inline-block;
+}
+
+
+.hobbylist {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    box-shadow: 3px 5px 12px rgba(0, 0, 0, 0.05);
+}
+
+.hobbies-ul {
+    list-style: none;
+}
+
+.hobbies-ul li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e26d5c;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.hobbies-ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 700px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .left-column { order: 1; }
+    .right-column { order: 2; text-align: left; }
+}
